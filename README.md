@@ -1,4 +1,6 @@
 # Tokenized Strategy Periphery Contracts
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falialobidm%2Ftokenized-strategy-periphery.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Falialobidm%2Ftokenized-strategy-periphery?ref=badge_shield)
+
 
 This repo contains the option contracts that can be used for any Yearn V3 tokenized strategy to make strategy development even easier.
 
@@ -93,3 +95,7 @@ The goal of the APR oracle to is to return the expected current APR the strategy
 The default use of the Tokenized Strategies and V3 Vaults is for report cycles to be based off of the individual `maxProfitUnlockTime`. The triggers are an easy way for keepers to monitor the status of each strategy and know when `report` should be called on each.
 
 However, if a strategist wants to implement a custom trigger for their strategy or vault you can use the simple `CustomTriggerBase` contracts to inherit the proper interface. Then return the expected APR scaled to 1e18 (1e17 == 10%).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falialobidm%2Ftokenized-strategy-periphery.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Falialobidm%2Ftokenized-strategy-periphery?ref=badge_large)
